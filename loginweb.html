@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .login-form {
+            margin: 0 auto;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function checkLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "Tiara Arunissa" && password === "ayamgoreng") {
+                document.body.style.backgroundColor = "#FFE4E1";
+                alert("Selamat datang!");
+            } else {
+                alert("Username atau password salah!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <div class="login-form">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password"><br><br>
+        <button onclick="checkLogin()">Login</button>
+    </div>
+</body>
+</html>
